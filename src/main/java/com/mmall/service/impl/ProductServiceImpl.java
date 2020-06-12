@@ -109,7 +109,7 @@ public class ProductServiceImpl implements IProductService {
         // pojo-->bo(business object)-->vo(view object)
 
         ProductDetailVo productDetailVo = assembleProductDetailVo(product);
-        return ServerResponse.createBySuccess();
+        return ServerResponse.createBySuccess(productDetailVo);
     }
 
     private ProductDetailVo assembleProductDetailVo(Product product){
